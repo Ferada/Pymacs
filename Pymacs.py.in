@@ -379,9 +379,9 @@ class Protocol:
                 handle = open(run.debug_file, 'a')
                 handle.write(prefix + text)
                 handle.close()
-            sys.stdout.buffer.write(prefix.encode('ASCII'))
-            sys.stdout.buffer.write(data)
-            sys.stdout.buffer.flush()
+            sys.stdout.write(prefix.encode('ASCII'))
+            sys.stdout.write(data)
+            sys.stdout.flush()
 
     else:
 
